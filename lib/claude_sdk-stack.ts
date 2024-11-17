@@ -41,7 +41,7 @@ export class ClaudeSdkStack extends cdk.Stack {
 
     // Create Layer
     const dependenciesLayer = new lambda.LayerVersion(this, 'DependenciesLayer', {
-      code: lambda.Code.fromAsset('assets/lambdaLayers/claude-layer.zip'),
+      code: lambda.Code.fromAsset('assets/lambdaLayers/anthropic-layer.zip'),
       compatibleRuntimes: [lambda.Runtime.PYTHON_3_12],
       description: 'Dependencies for Claude SDK Lambda',
     });
