@@ -3,7 +3,6 @@ name: Deploy CDK Stack v2
 on:
   pull_request:
     branches: [ main ]
-    types: [ closed ]
   workflow_dispatch:
 
 env:
